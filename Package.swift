@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftyRouter",
+    platforms: [
+        .iOS(.v15),
+        .macOS(.v10_15)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -20,7 +24,8 @@ let package = Package(
         ),
         .testTarget(
             name: "SwiftyRouterTests",
-            dependencies: ["SwiftyRouter"]
+            dependencies: ["SwiftyRouter"],
+            path: "Tests/SwiftyRouterTests"
         ),
     ]
 )
