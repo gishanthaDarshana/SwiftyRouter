@@ -228,6 +228,4 @@ swift test
 
 The test suite covers stack behavior such as pushing, replacing, popping, clearing, and repeated routes creating distinct sessions.
 
-## License
 
-Add your license information here.
