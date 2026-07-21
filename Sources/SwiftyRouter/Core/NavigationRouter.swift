@@ -9,6 +9,7 @@ import Combine
 /// `NavigationRouter` owns the ordered stack of routes rendered by
 /// `NavigationHost`. Use the router to present, replace, or dismiss
 /// routes without coupling feature views to the host implementation.
+@MainActor
 open class NavigationRouter<Route: Equatable>: ObservableObject {
     /// The currently presented navigation sessions, ordered from bottom to top.
     @Published public private(set) var stack: [NavigationSession<Route>] = []
